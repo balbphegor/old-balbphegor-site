@@ -15302,7 +15302,7 @@ function startInteraction() {
   document.addEventListener("click", handleMouseClick)
   document.addEventListener("keydown", handleKeyPress)
 }
-showAlert("Credit to 'Web Dev Simplified' for his videoes", 1000)
+showAlert("Credit to 'Web Dev Simplified' for his video on how to make wordle!!!", 1000)
 function stopInteraction() {
   document.removeEventListener("click", handleMouseClick)
   document.removeEventListener("keydown", handleKeyPress)
