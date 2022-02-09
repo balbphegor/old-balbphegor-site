@@ -4,6 +4,8 @@ MY SITE IS UNDER CONSTRUCTION (IT REALLY IS)
 
 FOR NOW, THE LEAST I COULD DO IS ENTERTAIN YOU.
 
+THESE VIDEOES ARE LOUD ILL FIX IT LATER YOU'VE BEEN WARNED
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hjynBSgUInc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0E15Mw7pjJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
