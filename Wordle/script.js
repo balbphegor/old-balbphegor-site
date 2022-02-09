@@ -15305,8 +15305,6 @@ function startInteraction() {
 function stopInteraction() {
   document.removeEventListener("click", handleMouseClick)
   document.removeEventListener("keydown", handleKeyPress)
-  showAlert("Credit to 'Web Dev Simplified' for his video on how to make wordle!!!", 1000)
-  showAlert(`Yesterday's word was ${targetWords[Math.floor(dayOffset)]}.`, 1000)
 }
 
 function handleMouseClick(e) {
@@ -15409,6 +15407,8 @@ function checkWinLose(guess, tiles) {
   }
   const remainingTiles = guessGrid.querySelectorAll(":not([data-letter])")
   if (remainingTiles.length === 0) {
+    showAlert("Credit to 'Web Dev Simplified' for his video on how to make wordle!!!", null)
+    showAlert(`Yesterday's word was ${targetWords[Math.floor(dayOffset)]}.`, null)
     showAlert(targetWord.toUpperCase(), null)
     stopInteraction()
   }
