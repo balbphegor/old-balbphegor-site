@@ -15401,14 +15401,14 @@ function checkWinLose(guess, tiles) {
   const guessGrid = document.querySelector("[data-guess-grid]")
   if (guess === targetWord) {
     showAlert("You Win", 5000)
+    showAlert("Credit to 'Web Dev Simplified' for his video on how to make wordle!!!", 5000)
+    showAlert(`Yesterday's word was ${targetWords[Math.floor(dayOffset)]}.`, 5000)
     danceTiles(tiles)
     stopInteraction()
     return
   }
   const remainingTiles = guessGrid.querySelectorAll(":not([data-letter])")
   if (remainingTiles.length === 0) {
-    showAlert("Credit to 'Web Dev Simplified' for his video on how to make wordle!!!", null)
-    showAlert(`Yesterday's word was ${targetWords[Math.floor(dayOffset)]}.`, null)
     showAlert(targetWord.toUpperCase(), null)
     stopInteraction()
   }
