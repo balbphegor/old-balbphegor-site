@@ -15298,14 +15298,14 @@ const FLIP_ANIMATION_DURATION = 100
 const DANCE_ANIMATION_DURATION = 500
 startInteraction()
 // I FUCKING MADE THIS JASON
-function startInteraction(){
-    document.addEventListener("click", handleMouseClick);
-    document.addEventListener("keydown", handleKeyPress);
+function startInteraction() {
+  document.addEventListener("click", handleMouseClick)
+  document.addEventListener("keydown", handleKeyPress)
 }
 
-function stopInteraction(){
-    document.removeEventListener("click", handleMouseClick);
-    document.removeEventListener("keydown", handleKeyPress);
+function stopInteraction() {
+  document.removeEventListener("click", handleMouseClick)
+  document.removeEventListener("keydown", handleKeyPress)
 }
 
 function handleMouseClick(e) {
