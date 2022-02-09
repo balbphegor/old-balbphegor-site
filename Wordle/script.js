@@ -15302,11 +15302,11 @@ function startInteraction() {
   document.addEventListener("click", handleMouseClick)
   document.addEventListener("keydown", handleKeyPress)
 }
-showAlert("Credit to 'Web Dev Simplified' for his video on how to make wordle!!!", 1000)
-showAlert(`Yesterday's word was ${targetWords[Math.floor(dayOffset)]}.`, 1000)
 function stopInteraction() {
   document.removeEventListener("click", handleMouseClick)
   document.removeEventListener("keydown", handleKeyPress)
+  showAlert("Credit to 'Web Dev Simplified' for his video on how to make wordle!!!", 1000)
+  showAlert(`Yesterday's word was ${targetWords[Math.floor(dayOffset)]}.`, 1000)
 }
 
 function handleMouseClick(e) {
