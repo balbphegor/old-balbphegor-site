@@ -15293,7 +15293,7 @@ const WORD_LENGTH = 5;
 const offsetFromDate = new Date(2022, 0, 1)
 const msOffset = Date.now() - offsetFromDate
 const dayOffset = msOffset / 1000 / 60 / 60 / 24
-const targetWord = targetWords[Math.floor(dayOffset)]
+const targetWord = targetWords[Math.floor(dayOffset)+1]
 const FLIP_ANIMATION_DURATION = 100
 const DANCE_ANIMATION_DURATION = 500
 startInteraction()
