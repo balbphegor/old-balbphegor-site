@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Oswald&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>2048</title>
+</head>
+<body>
+  <div class="alert-container" data-alert-container></div>
+  <div class="info-container">
+    <h1>2048</h1>
+    <div class="spacer"></div>
+    <div class="score-container" data-score-container><h1>Score</h1><div class="score" data-score>0</div></div>
+    <div class="score-container" data-best-container><h1>Best</h1><div class="score" data-score>0</div></div>
+  </div>
+  <div id="comment" hidden >TODO: REFACTOR CODE, REPRESENT GAME BOARD WITH board</div>
+  <div class="gameboard" data-game-grid>
+    <div class="tile" data-state="0"></div>
+    <div class="tile" data-state="0"></div>
+    <div class="tile" data-state="0"></div>
+    <div class="tile" data-state="0"></div>
+
+    <div class="tile" data-state="0"></div>
+    <div class="tile" data-state="0"></div>
+    <div class="tile" data-state="0"></div>
+    <div class="tile" data-state="0"></div>
+
+    <div class="tile" data-state="0"></div>
+    <div class="tile" data-state="0"></div>
+    <div class="tile" data-state="0"></div>
+    <div class="tile" data-state="0"></div>
+
+    <div class="tile" data-state="0"></div>
+    <div class="tile" data-state="0"></div>
+    <div class="tile" data-state="0"></div>
+    <div class="tile" data-state="0"></div>
+  </div>
+  <button class="new-game" data-new-game>New Game</button>
+</body>
+</html>

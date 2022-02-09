@@ -1,0 +1,127 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+  font-family: Arial;
+}
+body{
+  background-color: floralwhite;
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: clamp(.5rem, 2.5vmin, 1.5rem);
+  user-select: none;
+}
+#comment{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+.info-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0;
+}
+.info-container >h1{
+  font-size: 4em;
+  font-family: 'Oswald';
+  letter-spacing: 4px;
+}
+.spacer{
+  width: 7em;
+  /* not an elegant solution but works and looks good */
+}
+.score-container{
+  background-color: hsl(28,16%,68%);
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  line-height: 1;
+  height: 4em;
+  width: 6em;
+  float: right;
+  font-family: 'Oswald', sans-serif;
+}
+.score-container > h1{
+  color: antiquewhite;
+  font-size: 1em;
+  letter-spacing: 0px;
+}
+.gameboard{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 1;
+  grid-template-columns: repeat(4, 5.5em);
+  grid-template-rows: repeat(4, 5.5em);
+  gap: .20em;
+}
+.tile{
+  font-family: 'Oswald';
+  background-color:hsl(31,20%,75%) ;
+  font-size: 2em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 5px;
+}
+.tile[data-state="2"]{
+  background-color: hsl(30,37%,89%) ;
+  color: hsl(30,8%,43%);
+}
+.tile[data-state="4"]{
+  background-color:hsl(38,50%,85%);
+  color: hsl(30,8%,43%);
+}
+.tile[data-state="8"]{
+  background-color:hsl(27,82%,71%);
+}
+.tile[data-state="16"]{
+  background-color:hsl(20,87%,67%);
+}
+.tile[data-state="32"]{
+  background-color:hsl(11,89%,66%);
+}
+.tile[data-state="64"]{
+  background-color:hsl(11,91%,59%);
+}
+.tile[data-state="128"]{
+  background-color:hsl(45,77%,68%);
+}
+.tile[data-state="256"]{
+  background-color:hsl(45,79%,65%);
+}
+.tile[data-state="512"]{
+  background-color:hsl(45,81%,62%);
+}
+.tile[data-state="1024"]{
+  background-color:hsl(46,82%,58%);
+}
+.tile[data-state="2048"]{
+  background-color:hsl(46,84%,55%);
+}
+.tile[data-state="4096"]{
+  background-color:hsl(48,9%,21%);
+}
+.new-game{
+  border: none;
+  background-color: hsl(29,16%,48%);  
+  color: antiquewhite;
+  font-family: 'Arial', 'sans-serif';
+  font-weight: bold;
+  padding: 1em;
+  margin: auto;  
+  border-radius: 5px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.score{
+  font-family: 'Oswald', 'Arial', 'sans-serif';
+}
