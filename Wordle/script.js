@@ -15389,7 +15389,7 @@ function submitGuess(){
     return word + tile.dataset.letter
   }, "")
   if (!dictionary.includes(guess)){
-    showAlert("Not in word list")
+    showAlert("Not in a valid word")
     shakeTiles(activeTiles);
     return
   }
