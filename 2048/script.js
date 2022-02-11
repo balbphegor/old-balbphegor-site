@@ -3,21 +3,36 @@ var board =
   [0,0,0,0],
   [0,0,2,0],
   [0,0,0,0] ]
-
+const boardState = document.querySelector("[data-game-grid]")
+var hasLost = false;
 function startInteraction(){
   document.addEventListener("keydown", handleKeyPress);
   document.addEventListener("click", handleMouseClick);
 }
 startInteraction();
+representGameboard(board);
 function handleMouseClick(e) {
   if  (e.target.matches("[data-new-game]")){
     board = [ [0,2,0,0],
               [0,0,0,0],
               [0,0,2,0],
               [0,0,0,0] ]
+    representGameboard(board);
     document.querySelector("[data-score]").innerHTML = "0"
   }
 }
+
+function representGameboard(board){
+  const tileArray = boardState.querySelectorAll(".tile")
+  for(let i = 0; i < board.length; i ++){
+    for(j = 0; j < board.length; j++){
+      const tile = tileArray[i * 4 + j];
+      tile.innerHTML = board[i][j];
+      tile.setAttribute("data-state", board[i][j].toString())
+    }
+  }
+}
+
 function handleKeyPress(e){
   if (e.key == "q"){
     document.getElementById("comment").hidden = !document.getElementById("comment").hidden;
@@ -33,7 +48,8 @@ function handleKeyPress(e){
       board[i] = rowMerge(board[i])
     }
     rowSlide(board)
-    //newTile(board)
+    newTile(board)
+    representGameboard(board)
   }
   if (e.key == "d"){
     //right
@@ -43,7 +59,8 @@ function handleKeyPress(e){
       board[i] = rowMerge(board[i].reverse()).reverse()
     }
     rowSlide(board, "r")
-    //newTile(board)
+    newTile(board)
+    representGameboard(board)
   }
   if (e.key == "w"){
     //up
@@ -51,6 +68,7 @@ function handleKeyPress(e){
     columnMergeUp(board)
     columnSlide(board)
     newTile(board)
+    representGameboard(board)
   }
   if (e.key == "s"){
     //down
@@ -58,6 +76,7 @@ function handleKeyPress(e){
     columnMergeDown(board)
     columnSlide(board, "d")
     newTile(board)
+    representGameboard(board)
   }
   if (e.key == "r"){
     newTile(board)
@@ -146,6 +165,21 @@ function columnMergeDown(grid){
   return grid
 }
 
+function showAlert(text, duration = 1000){
+  const alertContainer = document.querySelector("[data-alert-container]");
+  const alert = document.createElement("div");
+  alert.textContent = text;
+  alert.classList.add("alert");
+  alertContainer.prepend(alert);
+  if (duration == null) return
+  setTimeout(()=>{
+    alert.classList.add("hide")
+    alert.addEventListener("transitionend", () =>{
+      alert.remove();
+    })
+  }, duration)
+}
+
 function newTile(grid){
   const empties = []
   for(var i = 0; i < grid.length; i ++){
@@ -155,6 +189,7 @@ function newTile(grid){
       }
     }
   }
+  console.log(empties)
   if (empties.length != 0){
     const randomEmptyCoord = empties[Math.floor(Math.random()*empties.length)]
     grid[randomEmptyCoord[0]][randomEmptyCoord[1]] = Math.floor(Math.random()*2 + 1) * 2
