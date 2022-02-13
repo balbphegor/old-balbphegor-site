@@ -1,5 +1,5 @@
 var board = 
-[ [0,2,0,0],
+  [ [0,2,0,0],
   [0,0,0,0],
   [0,0,2,0],
   [0,0,0,0] ]
@@ -40,7 +40,7 @@ function handleKeyPress(e){
   if (e.key == "e"){
     console.log(board)
   }
-  if (e.key == "a"){
+  if (e.keyCode == '37'){
     //left
     rowSlide(board)
     // integrate this for loop into rowMerge
@@ -51,7 +51,7 @@ function handleKeyPress(e){
     newTile(board)
     representGameboard(board)
   }
-  if (e.key == "d"){
+  if (e.keyCode == '39'){
     //right
     rowSlide(board, "r")
     // integrate this for loop into rowMerge
@@ -62,7 +62,7 @@ function handleKeyPress(e){
     newTile(board)
     representGameboard(board)
   }
-  if (e.key == "w"){
+  if (e.keyCode == '38'){
     //up
     columnSlide(board)
     columnMergeUp(board)
@@ -70,7 +70,7 @@ function handleKeyPress(e){
     newTile(board)
     representGameboard(board)
   }
-  if (e.key == "s"){
+  if (e.keyCode == '40'){
     //down
     columnSlide(board, "d")
     columnMergeDown(board)
@@ -193,5 +193,6 @@ function newTile(grid){
   if (empties.length != 0){
     const randomEmptyCoord = empties[Math.floor(Math.random()*empties.length)]
     grid[randomEmptyCoord[0]][randomEmptyCoord[1]] = Math.floor(Math.random()*2 + 1) * 2
+    
   }
 }
