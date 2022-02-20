@@ -4,11 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono&display=swap" rel="stylesheet">
   <title>Calvin Lin</title>
 </head>
 <body>
-  HELLO
-  <a href="/Wordle/index.html">CHECKOUT MY WORDLE CLONE</a>
-  <a href="/2048/index.html">CHECK OUT MY 2048 CLONE</a>
+  <div id="intro">
+    <p>Hello! You've made it to my website. HTML, CSS and Javascript all hand crafted by yours truly. Excuse the stark amount of white space, I'm still working on it!</p>
+    <p>Reach out to me if you have any questions or comments! For now, all I have for you are some projects that I've been working on:</p>
+    <ul>
+      <li><a target="_blank" href="/Wordle/index.html">A wordle clone</a> I made from following an <a target="_blank" href="https://www.youtube.com/watch?v=Wak7iN4JZzU"> online tutorial</a></li>
+      <li><a target="_blank" href="/2048/index.html">A 2048 clone</a> that I made from messing around with concepts I learned from recreating wordle</li>
+    </ul>
+  </div>
+  <hr>
+  <div id="blog">
+    <h1>Blogatog: My thoughts and feelings on random matters.</h1>
+    <div class="article">
+      <h1 class="title">Bootstrap vs raw CSS</h1>
+      <h2 class="date">02/19/2022</h2>
+      <p>Two article entries in one day??? Wow!!!! I'm on a roll! I've been talking to some friends about whether or not my website should implement Bootstrap, or keep it pure handwritten CSS. I don't know how it's going
+        to play with React since I barely know anything about the framework, but I have a feeling that its better for my learning that I stick to CSS. The point of this website is to learn as much as I can about web development
+        and to have to make my own stylesheet only helps me get better at something I'd otherwise delegate to a library what I might not always have access to. The reasons why I might want to abandon
+        CSS entirely is rather enticing, however. It's a lot easier to skim whatever button or nav-bar strikes your fancy and construct it by giving it some class names. I won't do that though, because
+        strangely CSS is rather fun for me. Maybe I haven't done enough to out right hate it the same way how I have a strong distaste to python coding. Only time will tell, and you'll be able to read me
+        (or don't, it doesn't matter because I'll still do it anyways) in a future blog entry.
+      </p>
+    </div>
+    <div class="article" id="First Article">
+      <h1 class="title">First words</h1>
+      <h2 class="date">02/19/2022</h2>
+      <p>Hello! This website means a lot to me. It's been something that I've been putting off for a while, and now I'm really putting in the work to make it servicable. I have plans to "port" 
+        this website and make it strictly React, but that's still a framework that I'm learning. I suspect that some time in the future the website will be exclusively written in React, but for now it's
+        your bread and butter HTML, CSS and JS.
+      </p>
+    </div>
+  </div>
 </body>
 </html>

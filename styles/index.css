@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: hsl(217,29%,80%);
+  font-family: Arial, sans-serif;
+}
+#intro {
+  margin: auto;
+  width: 80%;
+}
+#blog > h1{
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+.article{
+  margin: auto;
+  width: 70%;
+}
+.title,.date{
+  text-align: center;
+}
+.date{
+  font-size: 0.8rem;
+}
