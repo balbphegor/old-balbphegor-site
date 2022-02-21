@@ -8,7 +8,7 @@ body{
   margin: auto;
   width: 80%;
 }
-#blog > h1{
+#blog > h1, .title{
   font-family: 'Roboto Mono', monospace;
   text-align: center;
 }
@@ -17,9 +17,11 @@ body{
   margin: auto;
   width: 70%;
 }
-.title,.date{
-  text-align: center;
+.title{
+  letter-spacing: 0.4rem;
+  font-weight: bold;
 }
 .date{
   font-size: 0.8rem;
+  text-align: center;
 }
