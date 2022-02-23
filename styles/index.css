@@ -20,9 +20,7 @@ body {
 }
 .article img {
   display: block;
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem auto 1rem auto;
 }
 .title {
   letter-spacing: 0.4rem;
