@@ -24,15 +24,23 @@
   <div id="blog">
     <h1>Blogatog: My thoughts on random matters.</h1>
     <div class="article">
-      <div class="article">
-      <h1 class="title">Three Days in React</h1>
+      <h1 class="title">Day 3 in React</h1>
       <h2 class="date">02/22/2022</h2>
       <p> Today is my third day learning React. I'll admit, my appreciation for React is growing everyday as I realise that what I'm learning speeds up my workflow by orders of magnitudes. I could make each of these blog posts from a single component since they're already nicely compartmentalized into divs with ids of "blog", with title and date tags. Easily done and very elementary in React.
       <br><br>
       I should have learned React a lot sooner. I'm currently learning react using this <a href="https://www.youtube.com/watch?v=4UZrsTqkcW4">video</a> which is a 10 hour comprehensive course. I'm doing an hour of this video everyday because I can't commit myself to watching more. I just get too distracted and I eventually click off to play video games or something.
       <br><br>
-      I have been also working on some courses on Codeacademy as well. I opted to do the <a href="https://www.codecademy.com/learn/react-101">Learn React</a> course to give myself some exercises and "course work" to get busy with. I'm not exactly enjoying this course, as it seems to use outdated/conflicting syntax from what I am acustomed to from the 10 hour video. For example, it advocates that one should always create a class which extends from <code>react.Component</code> with a <code>render(){}</code> function embeded in. I believe that <code>function Component()</code> (or for those who like arrow functions <code>const Component = () => {}</code>) works just as well. Needless to say, I'm still learning so there might be a very compelling reason why CodeAcademy advocates new learners to start using React in this manner.
+      I have been also working on some courses on Codeacademy as well. I opted to do the <a href="https://www.codecademy.com/learn/react-101">Learn React</a> course to give myself some exercises and "course work" to get busy with. I'm not exactly enjoying this course, as it seems to use outdated/conflicting syntax from what I am acustomed to from the 10 hour video. For example, it advocates that one should always create a class which extends from <code>react.Component</code> with a <code>render(){}</code> function embeded in. I believe that <code>function Component()</code> (or for those who like arrow functions <code>const Component = () => {}</code>) works just as well. Needless to say, I'm still learning so there might be a very compelling reason why CodeAcademy advocates new learners to start using React in this manner. <br>
+      <img width=300px height=200px src="./styles/coming-together.gif" alt="big brain">
+
+      UPDATE: So I found this <a href="https://www.twilio.com/blog/react-choose-functional-components">brilliant technical article</a> that compares the two methods of component creation I previously commented on. It should've been obvious when I first saw CodeAcademy's implementation of creating components by making classes which extend from <code>React.Component</code>. Extending them from the React.Component object in <code>react</code> is nice because it does what it says on the box: it's a class that houses the component. It's a factory that allows for getters and class functions which you can use when envoking <code>render()</code> instead of flanking your <code>function Component(){}</code> with other extreneous helper functions. Relevant constants stay within the scope of the class where they're relevant instead of floating around in global. I quite like this, but I still think I prefer creating my components with <code>function Component(){}</code>. For only spending 3 days with an average of maybe 2-3 hours on React, I'm really digging this framework. I just hope that the rest of the MERN stack is as enjoyable to learn.
+      <br><br>
+      Oh, and happy 22/02/2022. For those who are uninitiated with basketball and the thinking man's NBA team the Miami Heat: it's Jimmy Butler Day.
+
+      <img width=250px height=200px src="./styles/jimmy-mf-butler.jpg" alt="its jimbo">
       </p>
+    </div>
+    <div class="article">
       <hr width="20%">
       <h1 class="title">HELL</h1>
       <h2 class="date">02/20/2022</h2>
