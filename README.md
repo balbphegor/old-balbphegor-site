@@ -1,3 +1,3 @@
-# HELLO YOU'VE ARRIVED ON MY PORTFOLIO REPO
+My old defunct website
 
-MY SITE IS UNDER CONSTRUCTION
+In here, you'll find some projects I toyed around with using CSS, HTML and vanilla JS.
